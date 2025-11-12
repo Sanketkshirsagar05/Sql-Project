@@ -57,7 +57,3 @@ Contains individual order line items:
 
 ---
 
-## ⚙️ Data Source
-All data was **generated using [Mockaroo](https://www.mockaroo.com/)** to create realistic, synthetic datasets for SQL practice and analysis.  
-Each table was exported as a `.csv` file and imported into SQL Server Management Studio (SSMS).
-
