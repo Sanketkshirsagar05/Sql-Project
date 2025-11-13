@@ -1,6 +1,6 @@
-# 🛍️ SQL Online Retail Database – Mock Data
+# 🛍️ SQL Online Retail 
 
-This project simulates an **Online Retail Company Database** using realistic mock data generated from **[Mockaroo](https://www.mockaroo.com/)**.  
+This project simulates an **Online Retail Company** using realistic mock data generated from **[Mockaroo](https://www.mockaroo.com/)**.  
 The dataset is designed for SQL learning, query practice, and retail analytics using **SQL Server Management Studio (SSMS)**.
 
 ---
