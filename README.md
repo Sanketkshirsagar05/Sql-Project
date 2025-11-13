@@ -17,12 +17,12 @@ The database includes the following five tables:
 
 ## 📁 Files Included
 
-### 🗂️ **File 1: Create DB Tables.sql**
+###  **File 1: Create DB Tables.sql**
 - Contains SQL scripts to create the database `RetailDB`
 - Defines schema and table structures for all 5 tables
 - Includes `PRIMARY KEY`, `FOREIGN KEY`, and `IDENTITY` relationships
 
-### 💡 **File 2: Question & Queries.sql**
+###  **File 2: Question & Queries.sql**
 - Includes SQL queries for:
   - Data exploration  
   - Joins and aggregations  
