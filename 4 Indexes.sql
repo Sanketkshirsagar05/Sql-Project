@@ -1,19 +1,15 @@
 /*
 ===============================
-Implementing Indexes
+Indexes
 ===============================
-
-Indexes are crucial for optimizing the performance of your SQL Server database, 
-especially for read-heavy operations like SELECT queries. 
-
-Let's create indexes for the OnlineRetailDB database to improve query performance.
 
 A. Indexes on Categories Table
 	1. Clustered Index on CategoryID: Usually created with the primary key.
 */
 
-USE OnlineRetailDB;
+USE OnlineRetail;
 GO
+
 -- Clustered Index on Categories Table (CategoryID)
 CREATE CLUSTERED INDEX IDX_Categories_CategoryID
 ON Categories(CategoryID);
@@ -28,7 +24,7 @@ B. Indexes on Products Table
 */
 
 -- Drop Foreign Key Constraint from OrderItems Table - ProductID
-ALTER TABLE OrderItems DROP CONSTRAINT FK__OrderItem__Produ__440B1D61;
+ALTER TABLE OrderItems DROP CONSTRAINT FK__OrderItem__Produ__5535A963;
 
 -- Clustered Index on Products Table (ProductID)
 CREATE CLUSTERED INDEX IDX_Products_ProductID 
@@ -45,6 +41,10 @@ CREATE NONCLUSTERED INDEX IDX_Products_Price
 ON Products(Price);
 GO
 
+
+ALTER TABLE Products
+ADD CONSTRAINT PK_Products PRIMARY KEY (ProductID);
+
 -- Recreate Foreign Key Constraint on OrderItems (ProductID Column)
 ALTER TABLE OrderItems ADD CONSTRAINT FK_OrderItems_Products
 FOREIGN KEY (ProductID) REFERENCES Products(ProductID);
@@ -58,7 +58,7 @@ C. Indexes on Orders Table
 */
 
 -- Drop Foreign Key Constraint from OrderItems Table - OrderID
-ALTER TABLE OrderItems DROP CONSTRAINT FK__OrderItem__Order__44FF419A;
+ALTER TABLE OrderItems DROP CONSTRAINT FK__OrderItem__Order__5629CD9C;
 
 -- Clustered Index on OrderID
 CREATE CLUSTERED INDEX IDX_Orders_OrderID
@@ -73,6 +73,11 @@ GO
 --  Non-Clustered Index on OrderDate: To speed up queries filtering or sorting by OrderDate.
 CREATE NONCLUSTERED INDEX IDX_Orders_OrderDate
 ON Orders(OrderDate);
+GO
+
+
+ALTER TABLE Orders
+ADD CONSTRAINT PK_Orders PRIMARY KEY (OrderID);
 GO
 
 -- Recreate Foreign Key Constraint on OrderItems (OrderID Column)
@@ -112,7 +117,7 @@ E. Indexes on Customers Table
 */
 
 -- Drop Foreign Key Constraint from Orders Table - CustomerID
-ALTER TABLE Orders DROP CONSTRAINT FK__Orders__Customer__403A8C7D;
+ALTER TABLE Orders DROP CONSTRAINT FK__Orders__Customer__52593CB8;
 
 -- Clustered Index on CustomerID
 CREATE CLUSTERED INDEX IDX_Customers_CustomerID
@@ -129,6 +134,9 @@ CREATE NONCLUSTERED INDEX IDX_Customers_Country
 ON Customers(Country);
 GO
 
+ALTER TABLE Customers
+ADD CONSTRAINT PK_Customers PRIMARY KEY (CustomerID);
+GO
 -- Recreate Foreign Key Constraint on Orders (CustomerID Column)
 ALTER TABLE Orders ADD CONSTRAINT FK_Orders_CustomerID
 FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID);
