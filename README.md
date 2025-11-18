@@ -55,3 +55,14 @@ A general log table is created to capture Records detail
 - Trigger for **DELETE** on Customers  
 
 ---
+
+## 📄 File 4 – Indexes.sql
+
+This file adds indexes to improve query performance across the database.
+
+### Includes:
+- Clustered and non-clustered indexes on **Customers**, **Products**, **Categories**, **Orders**, and **OrderItems** tables  
+- Indexes on key columns such as CustomerID, OrderDate, CategoryID, Price, OrderID, and ProductID  
+- Temporary dropping and recreating of foreign key constraints where required  
+
+These indexes optimize filtering, sorting, and lookup queries throughout the retail database.
