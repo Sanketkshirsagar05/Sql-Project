@@ -66,3 +66,16 @@ This file adds indexes to improve query performance across the database.
 - Temporary dropping and recreating of foreign key constraints where required  
 
 These indexes optimize filtering, sorting, and lookup queries throughout the retail database.
+
+---
+
+## 📄 File 5 – Views.sql
+
+This file contains SQL views created to simplify complex queries and improve data accessibility.
+
+### Includes:
+- **Product Details View:** Combines product information with category names  
+- **Customer Orders View:** Shows total orders and total spending per customer  
+- **Recent Orders View:** Displays orders placed within the last 30 days  
+
+These views help in quick reporting, easier querying, and improved data organization.
