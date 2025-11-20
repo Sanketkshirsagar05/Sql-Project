@@ -54,8 +54,6 @@ A general log table is created to capture Records detail
 - Trigger for **UPDATE** on Customers  
 - Trigger for **DELETE** on Customers  
 
----
-
 ## 📄 File 4 – Indexes.sql
 
 This file adds indexes to improve query performance across the database.
@@ -67,8 +65,6 @@ This file adds indexes to improve query performance across the database.
 
 These indexes optimize filtering, sorting, and lookup queries throughout the retail database.
 
----
-
 ## 📄 File 5 – Views.sql
 
 This file contains SQL views created to simplify complex queries and improve data accessibility.
@@ -79,8 +75,6 @@ This file contains SQL views created to simplify complex queries and improve dat
 - **Recent Orders View:** Displays orders placed within the last 30 days  
 
 These views help in quick reporting, easier querying, and improved data organization.
-
----
 
 ## 📄 File 6 – Questions & Queries2.sql
 
