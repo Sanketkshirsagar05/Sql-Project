@@ -38,7 +38,7 @@ CREATE TABLE Categories (
 
 -- Orders table
 CREATE TABLE Orders (
-	OrderId INT PRIMARY KEY IDENTITY(1,1),
+	OrderID INT PRIMARY KEY IDENTITY(1,1),
 	CustomerId INT,
 	OrderDate DATETIME DEFAULT GETDATE(),
 	TotalAmount DECIMAL(10,2),
@@ -56,3 +56,4 @@ CREATE TABLE OrderItems (
 	FOREIGN KEY (ProductID) REFERENCES Products(ProductID),
 	FOREIGN KEY (OrderId) REFERENCES Orders(OrderID)
 );
+
