@@ -97,3 +97,15 @@ Implements security and role-based access control (RBAC) for the database.
 - Checking effective permissions for auditing  
 
 This file ensures controlled access to database objects and enhances overall security.
+
+## 📄 File 8 – Scenario Based Queries.sql
+
+Contains 20 real-world security and access-control scenarios using SQL Server RBAC.
+
+### Includes:
+- Roles for read-only users, data entry clerks, product managers, support teams, and analysts  
+- Permissions for INSERT, UPDATE, DELETE, SELECT, BACKUP, ALTER, and CONTROL  
+- Column-level security, view-only reporting access, temporary access, and auditor roles  
+- Application roles, combined roles, and sensitive data access examples  
+
+This file demonstrates practical permission setups often used in enterprise SQL environments.
