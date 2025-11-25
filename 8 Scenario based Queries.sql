@@ -1,22 +1,10 @@
 
 /*
 ==================
-Summary
+Scenario based Queries
 ==================
-	1. Create Logins: Authenticate users at the SQL Server level.
-	2. Create Users: Create users in the database for the logins.
-	3. Create Roles: Group users with similar permissions.
-	4. Assign Users to Roles: Add users to appropriate roles.
-	5. Grant Permissions: Grant necessary permissions to roles.
-	6. Revoke Permissions: Revoke permissions if needed.
-	7. View Effective Permissions: Check the effective permissions for users.
 */
 
-/*
-	Here are 20 different scenarios for access control in SQL Server. 
-	These scenarios cover various roles and permissions that can be assigned to users 
-	in the `OnlineRetailDB` database.
-*/
 
 --- Scenario 1: Read-Only Access to All Tables
 CREATE ROLE ReadOnlyRole;
